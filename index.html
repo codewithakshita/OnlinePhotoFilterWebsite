@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="www.PicEon.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">HOME</a></li>
+            <li class="item"><a href="#filter-container">CHOOSE FILTER</a></li>
+            <li class="item"><a href="#client-section">OUR CLIENTS</a></li>
+            <li class="item"><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">
+            Welcome to PicEon.com
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p> Doloremque asperiores quod alias.</p>
+        <button class="btn">Start Editing Now</button>
+    </section>
+
+    <section id="filter-container">
+        <h1 class="h-primary center">Choose Filter</h1>
+        <div id="filter">
+            <div id="box">
+                <img id="img1" src="../images/image1.jpg" alt="">
+                <h2 class="h-secondary center">
+                    Bright & Saturated
+                </h2>
+                <p class="center">
+                    <button onclick="myFunction1()">Try it</button><br><br>
+
+                </p>
+            </div>
+            <div id="box">
+                <img id="img2" src="../images/image2.jpg" alt="">
+                <h2 class="h-secondary center">
+                  The Classic 
+                </h2>
+                <p class="center">
+                    <button onclick="myFunction2()">Try it</button><br><br>
+                </p>
+            </div>
+            <div id="box">
+                <img id="img3" src="../images/image3.jpg" alt="">
+                <h2 class="h-secondary center">
+                    Contrast & Saturated
+                </h2>
+                <p class="center">
+                    <button onclick="myFunction3()">Try it</button><br><br>
+                </p>
+            </div>
+            <div id="box">
+                <img id="img4" src="../images/image4.jpg" alt="">
+                <h2 class="h-secondary center">
+                    Adjust Brightness
+                </h2>
+                <p class="center">
+                    <button onclick="myFunction4()">Try it</button><br><br>
+                </p>
+            </div>   
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="../images/logo2.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="../images/download.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="../images/skype.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="../images/hp.png" alt="Our Clients">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.piceon.com All rights reserved 
+        </div>
+    </footer>    
+    <script>
+        function myFunction1() {
+            document.getElementById("img1").style.filter = "brightness(100%) saturate(50%)";
+        }
+        function myFunction2() {
+                    document.getElementById("img2").style.filter = "grayscale(100%)";
+        }
+        function myFunction3() {
+                    document.getElementById("img3").style.filter = "contrast(70%) saturate(40%)";
+        }
+        function myFunction4() {
+                    document.getElementById("img4").style.filter = "brightness(80%)";
+        }
+        
+        </script>
+        
+</body>
+</html>
